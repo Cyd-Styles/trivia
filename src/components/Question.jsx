@@ -7,10 +7,11 @@ class Question extends Component {
   render() {
     return (
       <div>
-        Add your QuestionText, Reset Button and AnswerButtons here.  
+        {this.props.text}  
+        {this.props.choices}
       </div>
     );
   }
 }
 
-export default Question;
+export { Question };
