@@ -10,9 +10,11 @@ class Question extends Component {
     let chosenChoiceIndex = choiceIndex;
     let correctChoiceIndex = this.props.correct_choice;
     if (chosenChoiceIndex === correctChoiceIndex) {
-      alert("Correct!");
+      this.props.handle_answer(true);
+      console.log("Correct");
     } else {
-      alert("Incorrect!");
+      this.props.handle_answer(false);
+      console.log("Incorrect");
     }
   }
 
