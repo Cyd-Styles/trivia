@@ -29,6 +29,7 @@ class App extends Component {
         <Question
             text = {this.state.question.question_text}
             choices = {this.state.question.choices}
+            correct_choice = {this.state.question.correct_choice_index}
             />
       </div>
     );
